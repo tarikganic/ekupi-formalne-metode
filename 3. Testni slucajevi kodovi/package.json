@@ -1,0 +1,32 @@
+{
+	"name": "ekupi-tests",
+	"version": "1.0.0",
+	"description": "Automatizovani testovi za eKupi.ba - Seminarski rad iz predmeta Formalne metode",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha tests/*.spec.js --timeout 90000",
+		"test:tc01": "mocha tests/TC01_pretragaProizvoda.spec.js --timeout 90000",
+		"test:tc02": "mocha tests/TC02_filtriranjeRezultata.spec.js --timeout 90000",
+		"test:tc03": "mocha tests/TC03_pregledDetaljaProizvoda.spec.js --timeout 90000",
+		"test:tc04": "mocha tests/TC04_dodavanjeUKorpu.spec.js --timeout 90000",
+		"test:tc05": "mocha tests/TC05_promjenaKolicineKorpa.spec.js --timeout 90000",
+		"test:tc06": "mocha tests/TC06_uklanjanjeIzKorpe.spec.js --timeout 90000",
+		"test:tc07": "mocha tests/TC07_prijavaKorisnika.spec.js --timeout 90000",
+		"test:tc08": "mocha tests/TC08_azuriranjePodataka.spec.js --timeout 90000",
+		"test:tc09": "mocha tests/TC09_povijestNarudzbi.spec.js --timeout 90000",
+		"test:tc10": "mocha tests/TC10_navigacijaKategorije.spec.js --timeout 90000"
+	},
+	"keywords": [
+		"selenium",
+		"mocha",
+		"testing",
+		"qa",
+		"ekupi"
+	],
+	"author": "Grupa: Enida Baljić, Ibrahim Hodžić, Tarik Ganić",
+	"license": "ISC",
+	"devDependencies": {
+		"mocha": "^11.7.5",
+		"selenium-webdriver": "^4.39.0"
+	}
+}
